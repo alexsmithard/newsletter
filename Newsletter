@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FPSPatch — Home</title>
+  <meta name="description" content="Official landing page linking to FPSPatch.com">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#0ea5ff;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,var(--bg),#071022);color:#e6eef8;line-height:1.45}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),#7c3aed);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#021022}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:0.95rem}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:36px;align-items:center}
+    .hero h1{margin:0;font-size:2.1rem}
+    .lead{color:var(--muted);margin-top:12px}
+    .cta{margin-top:20px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#021022;text-decoration:none;font-weight:600}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .features{display:flex;gap:12px;margin-top:22px}
+    .feature{flex:1;padding:12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    footer{margin-top:48px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    .small{font-size:0.9rem}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.brand .logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FP</div>
+        <div>
+          <div style="font-weight:700">FPSPatch</div>
+          <div style="font-size:0.85rem;color:var(--muted)">Fast. Simple. Secure.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Welcome to FPSPatch</h1>
+        <p class="lead">A clean, single-page starter that links directly to <strong>FPSPatch.com</strong>. Use this as a landing page, link hub, or simple promotional splash.</p>
+        <div class="cta">
+          <!-- Primary call-to-action links to the domain the user requested -->
+          <a class="btn" href="https://FPSPatch.com" target="_blank" rel="noopener noreferrer">Visit FPSPatch.com →</a>
+        </div>
+
+        <div class="features" id="features">
+          <div class="feature card">
+            <strong>Fast</strong>
+            <p class="small" style="color:var(--muted)">Minimal, performance-minded markup so pages load quickly.</p>
+          </div>
+          <div class="feature card">
+            <strong>Simple</strong>
+            <p class="small" style="color:var(--muted)">Easy to edit HTML/CSS — no frameworks required.</p>
+          </div>
+          <div class="feature card">
+            <strong>Link</strong>
+            <p class="small" style="color:var(--muted)">Primary button and footer both link to <code>https://FPSPatch.com</code>.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card" style="text-align:left">
+        <h3 style="margin-top:0">Quick settings</h3>
+        <p class="small" style="color:var(--muted)">Edit the <code>&lt;title&gt;</code>, meta description, or button href to match your real content. Replace the FP logo block with your logo image.</p>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+        <p class="small"><strong>Status:</strong> Prepared — linked to <code>FPSPatch.com</code>.</p>
+        <p class="small"><strong>Deployment tips:</strong> Upload this file as <code>index.html</code> to any static host (Netlify, Vercel, GitHub Pages, or a basic VPS).</p>
+      </aside>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <div class="card">
+        <h3 style="margin-top:0">About this page</h3>
+        <p class="small" style="color:var(--muted)">This is a compact, accessible starter page. It intentionally avoids heavy frameworks so you can iterate quickly.
+        Customize the colors, typography, and content to match your brand.</p>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h3 style="margin-top:0">Contact</h3>
+        <p class="small" style="color:var(--muted)">Prefer email? Replace the placeholder below with your contact address.</p>
+        <p style="margin:8px 0"><a href="mailto:hello@FPSPatch.com" style="color:var(--accent);text-decoration:none">hello@FPSPatch.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small">© "FPSPatch" — All rights reserved.</div>
+      <div class="small">Primary link: <a href="https://FPSPatch.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">FPSPatch.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
